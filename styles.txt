@@ -1,0 +1,140 @@
+/* Flex Container */
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: black;
+  color: white;
+  height: 90vh;
+  width: 75%;
+  margin: auto;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+}
+
+/* Flex Items
+  Header
+  Nav Content
+  Footer
+*/
+
+header {
+  text-align: left;
+  flex: 0;
+  flex-basis: 5rem;
+  /* Dev-Setting */
+  /* border: 1px solid white; */
+}
+
+article {
+  flex: 3 75% !important;
+  order: 2;
+
+  /* Dev-Setting */
+  /* border: 1px solid white; */
+}
+
+aside {
+  flex: 1 0 0 !important;
+  order: 1;
+  /* Dev-Setting */
+  /* border: 1px solid white; */
+}
+
+.footer {
+  order: 3;
+  text-align: center;
+  /* Dev-Setting */
+  /* border: 1px solid white; */
+}
+
+/* General Styling */
+
+button:focus {
+  outline: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header Styling */
+
+.page-title {
+  padding: 0 0 0 15px;
+}
+
+/* Nav Section */
+
+.nav-button {
+  border: 0;
+  background: rgb(163, 163, 163);
+  border-bottom-right-radius: 400px;
+  border-top-right-radius: 400px;
+  height: 100px;
+  width: 65px;
+  margin: 20px 0;
+}
+
+.nav-button:hover {
+  background: rgb(124, 124, 124);
+}
+
+/* Content Section */
+
+.content-nav-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 8fr;
+}
+
+.category-movie-bubble {
+  /* border: 1px solid green; */
+  justify-self: center;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.category-music-bubble {
+  /* border: 1px solid green; */
+  justify-self: right;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.category-design-bubble {
+  /* border: 1px solid green; */
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.bubble {
+  text-align: center;
+  color: lightgrey;
+  background-color: rgb(19, 18, 18);
+  border: 1px solid rgb(19, 18, 18);
+  height: 200px;
+  width: 200px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  margin: 15px;
+}
+
+.bubble:hover {
+  color: black;
+  background-color: rgb(233, 233, 233);
+}
+
+.bubble-content {
+  position: relative;
+  margin-top: 45%;
+}
+
+/* Footer Section */
+
+.footer {
+}
