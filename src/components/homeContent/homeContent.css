@@ -1,0 +1,45 @@
+.home-container {
+  height: 100%;
+  border: 1px solid black;
+  display: grid;
+  grid-gap: 5%;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: 10% auto;
+  grid-template-areas:
+    "music-selected movie-selected design-selected"
+    "music movie design"
+}
+
+.music-topic {
+  border: 1px solid black;
+  grid-area: music-selected;
+}
+
+.movie-topic {
+  border: 1px solid black;
+  grid-area: movie-selected;
+}
+
+.design-topic {
+  border: 1px solid black;
+  grid-area: design-selected;
+}
+
+.music {
+  border: 1px solid black;
+  grid-area: music;
+}
+
+.movie {
+  border: 1px solid black;
+  grid-area: movie;
+}
+
+.design {
+  border: 1px solid black;
+  grid-area: design;
+}
+
+.hidden {
+  display: none;
+}
