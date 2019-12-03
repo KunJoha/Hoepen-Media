@@ -1,14 +1,14 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 import "./homeContent.css";
 
 function Home() {
+  const [view, changeView] = useState(true);
 
-  const hideNotSelected = (e) => {
+  const hideNotSelected = e => {
     e.preventDefault();
-    console.log("hello");
-    let selectedItem = e.current;
-    console.log(selectedItem);
+    changeView(!view);
+    console.log(view);
   };
 
   return (
@@ -17,9 +17,24 @@ function Home() {
         <span className="music-topic hidden">Music</span>
         <span className="movie-topic hidden">Movie</span>
         <span className="design-topic hidden">Design</span>
-        <span className="music" onClick={(e) => hideNotSelected(e)}>Music</span>
-        <span className="movie" onClick={(e) => hideNotSelected(e)}>Movie</span>
-        <span className="design" onClick={(e) => hideNotSelected(e)}>Design</span>
+        <span
+          className={"music " + (!view ? "hidden" : "")}
+          onClick={e => hideNotSelected(e)}
+        >
+          Music
+        </span>
+        <span
+          className={"movie " + (!view ? "hidden" : "")}
+          onClick={e => hideNotSelected(e)}
+        >
+          Movie
+        </span>
+        <span
+          className={"design " + (!view ? "hidden" : "")}
+          onClick={e => hideNotSelected(e)}
+        >
+          Design
+        </span>
       </div>
     </Fragment>
   );
