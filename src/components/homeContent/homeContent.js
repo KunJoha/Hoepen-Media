@@ -3,38 +3,71 @@ import React, { Fragment, useState } from "react";
 import "./homeContent.css";
 
 function Home() {
-  const [view, changeView] = useState(true);
+  const [MainView, toggleMainView] = useState(true);
+  const [subTopicView, changeSubTopicView] = useState("");
 
-  const hideNotSelected = e => {
+  const handleSubTopicView = e => {
     e.preventDefault();
-    changeView(!view);
-    console.log(view);
+    toggleMainView(!MainView);
+    changeSubTopicView(e.target.getAttribute("name"));
+  };
+
+  const backToMenu = () => {
+    toggleMainView(!MainView);
+    changeSubTopicView("");
   };
 
   return (
     <Fragment>
       <div className="home-container">
-        <span className="music-topic hidden">Music</span>
-        <span className="movie-topic hidden">Movie</span>
-        <span className="design-topic hidden">Design</span>
-        <span
-          className={"music " + (!view ? "hidden" : "")}
-          onClick={e => hideNotSelected(e)}
-        >
-          Music
-        </span>
-        <span
-          className={"movie " + (!view ? "hidden" : "")}
-          onClick={e => hideNotSelected(e)}
-        >
-          Movie
-        </span>
-        <span
-          className={"design " + (!view ? "hidden" : "")}
-          onClick={e => hideNotSelected(e)}
-        >
-          Design
-        </span>
+        {MainView ? (
+          <Fragment>
+            <span
+              className="music"
+              name="music"
+              onClick={e => handleSubTopicView(e)}
+            >
+              Music
+            </span>
+            <span
+              className="movie"
+              name="movie"
+              onClick={e => handleSubTopicView(e)}
+            >
+              Movie
+            </span>
+            <span
+              className="design"
+              name="design"
+              onClick={e => handleSubTopicView(e)}
+            >
+              Design
+            </span>
+          </Fragment>
+        ) : (
+          ""
+        )}
+        {subTopicView === "music" && (
+          <Fragment>
+            <h3 className="music-topic" onClick={() => backToMenu()}>
+              music
+            </h3>
+          </Fragment>
+        )}
+        {subTopicView === "movie" && (
+          <Fragment>
+            <h3 className="movie-topic" onClick={() => backToMenu()}>
+              movie
+            </h3>
+          </Fragment>
+        )}
+        {subTopicView === "design" && (
+          <Fragment>
+            <h3 className="design-topic" onClick={() => backToMenu()}>
+              design
+            </h3>
+          </Fragment>
+        )}
       </div>
     </Fragment>
   );

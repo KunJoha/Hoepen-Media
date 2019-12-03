@@ -6,38 +6,38 @@
   grid-template-columns: repeat(3, 30%);
   grid-template-rows: 10% auto;
   grid-template-areas:
-    "music-selected movie-selected design-selected"
-    "music movie design"
+    "music-topic movie-topic design-topic"
+    "music-section movie-section design-section";
 }
 
 .music-topic {
   border: 1px solid black;
-  grid-area: music-selected;
+  grid-area: music-topic;
 }
 
 .movie-topic {
   border: 1px solid black;
-  grid-area: movie-selected;
+  grid-area: movie-topic;
 }
 
 .design-topic {
   border: 1px solid black;
-  grid-area: design-selected;
+  grid-area: design-topic;
 }
 
 .music {
   border: 1px solid black;
-  grid-area: music;
+  grid-area: music-section;
 }
 
 .movie {
   border: 1px solid black;
-  grid-area: movie;
+  grid-area: movie-section;
 }
 
 .design {
   border: 1px solid black;
-  grid-area: design;
+  grid-area: design-section;
 }
 
 .hidden {
