@@ -1,5 +1,9 @@
 import React, { Fragment, useState } from "react";
 
+import MusicContent from "../subContent/music";
+import MovieContent from "../subContent/movie";
+import DesignContent from "../subContent/design";
+
 import "./homeContent.css";
 
 function Home() {
@@ -52,6 +56,7 @@ function Home() {
             <h3 className="music-topic" onClick={() => backToMenu()}>
               music
             </h3>
+            <MusicContent />
           </Fragment>
         )}
         {subTopicView === "movie" && (
@@ -59,6 +64,7 @@ function Home() {
             <h3 className="movie-topic" onClick={() => backToMenu()}>
               movie
             </h3>
+            <MovieContent />
           </Fragment>
         )}
         {subTopicView === "design" && (
@@ -66,6 +72,7 @@ function Home() {
             <h3 className="design-topic" onClick={() => backToMenu()}>
               design
             </h3>
+            <DesignContent />
           </Fragment>
         )}
       </div>
