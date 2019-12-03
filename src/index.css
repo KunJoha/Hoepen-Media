@@ -1,3 +1,7 @@
+body {
+  font-family: josefin sans regular;
+}
+
 .main-container {
   display: flex;
   flex-flow: row wrap;
