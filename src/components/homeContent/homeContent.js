@@ -27,21 +27,21 @@ function Home() {
         {MainView ? (
           <Fragment>
             <span
-              className="music"
+              className="first"
               name="music"
               onClick={e => handleSubTopicView(e)}
             >
               Music
             </span>
             <span
-              className="movie"
+              className="second"
               name="movie"
               onClick={e => handleSubTopicView(e)}
             >
               Movie
             </span>
             <span
-              className="design"
+              className="third"
               name="design"
               onClick={e => handleSubTopicView(e)}
             >
@@ -53,25 +53,25 @@ function Home() {
         )}
         {subTopicView === "music" && (
           <Fragment>
-            <h3 className="music-topic" onClick={() => backToMenu()}>
+            <h2 className="music-topic" onClick={() => backToMenu()}>
               music
-            </h3>
+            </h2>
             <MusicContent />
           </Fragment>
         )}
         {subTopicView === "movie" && (
           <Fragment>
-            <h3 className="movie-topic" onClick={() => backToMenu()}>
+            <h2 className="movie-topic" onClick={() => backToMenu()}>
               movie
-            </h3>
+            </h2>
             <MovieContent />
           </Fragment>
         )}
         {subTopicView === "design" && (
           <Fragment>
-            <h3 className="design-topic" onClick={() => backToMenu()}>
+            <h2 className="design-topic" onClick={() => backToMenu()}>
               design
-            </h3>
+            </h2>
             <DesignContent />
           </Fragment>
         )}

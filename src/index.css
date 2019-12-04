@@ -1,6 +1,7 @@
-body {
+/* TODO Schriftart hinzufuegen */
+/* body {
   font-family: josefin sans regular;
-}
+} */
 
 .main-container {
   display: flex;
@@ -21,7 +22,7 @@ body {
   .nav-section {
     flex: 1 0 0;
     height: 700px;
-    width: 200px;
+    width: 10%;
   }
 }
 
@@ -45,4 +46,9 @@ footer,
 aside,
 section {
   border: 1px solid black;
+}
+
+.bubble {
+  height: 50%;
+  width: 50%;
 }

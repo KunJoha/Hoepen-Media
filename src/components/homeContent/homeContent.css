@@ -6,38 +6,30 @@
   grid-template-columns: repeat(3, 30%);
   grid-template-rows: 10% auto;
   grid-template-areas:
-    "music-topic movie-topic design-topic"
-    "music-section movie-section design-section";
+    "selected-topic none none"
+    "first-section second-section third-section";
 }
 
-.music-topic {
-  border: 1px solid black;
-  grid-area: music-topic;
-}
-
-.movie-topic {
-  border: 1px solid black;
-  grid-area: movie-topic;
-}
-
+.music-topic,
+.movie-topic,
 .design-topic {
   border: 1px solid black;
-  grid-area: design-topic;
+  grid-area: selected-topic;
 }
 
-.music {
+.first {
   border: 1px solid black;
-  grid-area: music-section;
+  grid-area: first-section;
 }
 
-.movie {
+.second {
   border: 1px solid black;
-  grid-area: movie-section;
+  grid-area: second-section;
 }
 
-.design {
+.third {
   border: 1px solid black;
-  grid-area: design-section;
+  grid-area: third-section;
 }
 
 .hidden {
