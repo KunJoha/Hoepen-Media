@@ -52,3 +52,7 @@ section {
   height: 50%;
   width: 50%;
 }
+
+.collapse {
+  height: 100%;
+}

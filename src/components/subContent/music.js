@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import "./subContent.css";
 
-function musicContent() {
+function MusicContent() {
   return (
     <Fragment>
       <span className="first bubble">musicContent</span>
@@ -12,4 +12,4 @@ function musicContent() {
   );
 }
 
-export default musicContent;
+export default MusicContent;

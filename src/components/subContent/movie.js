@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import "./subContent.css";
 
-function movieContent() {
+function MovieContent() {
   return (
     <Fragment>
       <span className="first bubble">movieContent</span>
@@ -12,4 +12,4 @@ function movieContent() {
   );
 }
 
-export default movieContent;
+export default MovieContent;
