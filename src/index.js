@@ -1,16 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Navbar from "./components/navbar";
 import Home from "./components/homeContent/homeContent";
 import latestMusic from "./components/latestContent/latestMusic";
 import latestMovie from "./components/latestContent/latestMovie";
 import latestDesign from "./components/latestContent/latestDesign";
+import FooterSection from "./components/footerSection";
 
 import "./index.css";
 
@@ -19,9 +16,7 @@ function App() {
     <div className="main-container">
       <Router>
         <header className="header-section">
-          <Link to="/">
-            Hoepen
-          </Link>
+          <Link to="/">Hoepen</Link>
         </header>
         <aside className="nav-section">
           <Navbar />
@@ -34,7 +29,9 @@ function App() {
             <Route exact path="/Design" component={latestDesign} />
           </Switch>
         </section>
-        <footer />
+        <footer className="footer-container">
+          <FooterSection />
+        </footer>
       </Router>
     </div>
   );

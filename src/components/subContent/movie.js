@@ -1,13 +1,76 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 import "./subContent.css";
 
 function MovieContent() {
+  const [selectedSub, changeSelectedSub] = useState("");
+
+  const collapsItem = e => {
+    changeSelectedSub(e.target.getAttribute("name"));
+  };
+
   return (
     <Fragment>
-      <span className="first bubble">movieContent</span>
-      <span className="second bubble">movieContent</span>
-      <span className="third bubble">movieContent</span>
+      <div
+        className={
+          "first bubble " + (selectedSub === "first" ? "collapse" : "")
+        }
+        name="first"
+        onClick={e => collapsItem(e)}
+      >
+        <h3>movieContent</h3>
+        <div className={selectedSub === "first" ? "" : "hidden"}>
+          <hr />
+          <article>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam
+          </article>
+        </div>
+      </div>
+      <div
+        className={
+          "second bubble " + (selectedSub === "second" ? "collapse" : "")
+        }
+        name="second"
+        onClick={e => collapsItem(e)}
+      >
+        <h3>movieContent</h3>
+        <div className={selectedSub === "second" ? "" : "hidden"}>
+          <hr />
+          <article>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam
+          </article>
+        </div>
+      </div>
+      <div
+        className={
+          "third bubble " + (selectedSub === "third" ? "collapse" : "")
+        }
+        name="third"
+        onClick={e => collapsItem(e)}
+      >
+        <h3>movieContent</h3>
+        <div className={selectedSub === "third" ? "" : "hidden"}>
+          <hr />
+          <article>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam
+          </article>
+        </div>
+      </div>
     </Fragment>
   );
 }

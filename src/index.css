@@ -1,7 +1,6 @@
-/* TODO Schriftart hinzufuegen */
-/* body {
-  font-family: josefin sans regular;
-} */
+body {
+  font-family: josefin sans;
+}
 
 .main-container {
   display: flex;
@@ -55,4 +54,20 @@ section {
 
 .collapse {
   height: 100%;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 2%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: gray;
 }
