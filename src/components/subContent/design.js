@@ -21,8 +21,8 @@ function DesignContent() {
       >
         <h3>designContent</h3>
         <div className={selectedSub === "first" ? "" : "hidden"}>
-          <hr />
-          <article>
+          <hr className="bubble-seperator" />
+          <article className="subContent-preview">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
@@ -41,8 +41,8 @@ function DesignContent() {
       >
         <h3>designContent</h3>
         <div className={selectedSub === "second" ? "" : "hidden"}>
-          <hr />
-          <article>
+          <hr className="bubble-seperator" />
+          <article className="subContent-preview">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
@@ -61,8 +61,8 @@ function DesignContent() {
       >
         <h3>designContent</h3>
         <div className={selectedSub === "third" ? "" : "hidden"}>
-          <hr />
-          <article>
+          <hr className="bubble-seperator" />
+          <article className="subContent-preview">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores

@@ -13,7 +13,7 @@ body {
 }
 
 .header-section {
-  height: 50px;
+  height: 100px;
   width: 100%;
 }
 
@@ -74,4 +74,8 @@ a:hover {
 
 .hoepen-logo {
   height: 100%;
+}
+
+.bubble-seperator {
+  width: 80%;
 }
