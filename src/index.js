@@ -20,7 +20,11 @@ function App() {
       <Router>
         <header className="header-section">
           <Link to="/">
-            <img className="hoepen-logo" src={HoepenLogo} alt="Hoepen Media" />
+            <img
+              className="hoepen-logo"
+              src={HoepenLogo}
+              alt="Hoepen Media Logo"
+            />
           </Link>
         </header>
         <aside className="nav-section">
