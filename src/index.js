@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+// Components
 import Navbar from "./components/navbar";
 import Home from "./components/homeContent/homeContent";
 import latestMusic from "./components/latestContent/latestMusic";
@@ -9,14 +10,18 @@ import latestMovie from "./components/latestContent/latestMovie";
 import latestDesign from "./components/latestContent/latestDesign";
 import FooterSection from "./components/footerSection";
 
+// Ressources
 import "./index.css";
+import HoepenLogo from "./ressources/hoepen_logo_gruen.jpg";
 
 function App() {
   return (
     <div className="main-container">
       <Router>
         <header className="header-section">
-          <Link to="/">Hoepen</Link>
+          <Link to="/">
+            <img className="hoepen-logo" src={HoepenLogo} alt="Hoepen Media" />
+          </Link>
         </header>
         <aside className="nav-section">
           <Navbar />
