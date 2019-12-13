@@ -19,7 +19,7 @@ body {
 
 @media all and (min-width: 600px) {
   .nav-section {
-    flex: 1 0 0;
+    flex: 2 0 0;
     height: 700px;
     width: 10%;
   }
@@ -32,11 +32,8 @@ body {
   .nav-section {
     order: 1;
   }
-  .content-section {
-    order: 2;
-  }
   footer {
-    order: 4;
+    order: 3;
   }
 }
 

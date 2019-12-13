@@ -27,9 +27,6 @@ function App() {
             />
           </Link>
         </header>
-        <aside className="nav-section">
-          <Navbar />
-        </aside>
         <section className="content-section">
           <Switch>
             <Route exact path="/" component={Home} />
@@ -38,6 +35,9 @@ function App() {
             <Route exact path="/Design" component={latestDesign} />
           </Switch>
         </section>
+        <aside className="nav-section">
+          <Navbar />
+        </aside>
         <footer className="footer-container">
           <FooterSection />
         </footer>
