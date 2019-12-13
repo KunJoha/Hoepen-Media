@@ -12,7 +12,7 @@ import FooterSection from "./components/footerSection";
 
 // Ressources
 import "./index.css";
-import HoepenLogo from "./ressources/hoepen_logo_gruen.jpg";
+import HoepenLogo from "./ressources/hoepen_logo_grün.jpg";
 
 function App() {
   return (
