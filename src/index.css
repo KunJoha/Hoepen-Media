@@ -1,7 +1,19 @@
+/* Allgemeines */
 body {
   font-family: josefin sans;
 }
 
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+/* MainContainer */
 .main-container {
   display: flex;
   flex-flow: row wrap;
@@ -12,22 +24,16 @@ body {
   flex: 1 100%;
 }
 
-.header-section {
-  height: 100px;
-  width: 100%;
-}
-
 @media all and (min-width: 600px) {
   .nav-section {
     flex: 2 0 0;
-    height: 700px;
-    width: 10%;
   }
 }
 
 @media all and (min-width: 800px) {
   .content-section {
     flex: 3 0px;
+    min-height: 500px;
   }
   .nav-section {
     order: 1;
@@ -44,6 +50,11 @@ section {
   border: 1px solid black;
 }
 
+.header-section {
+  height: 100px;
+  width: 100%;
+}
+
 .bubble {
   height: 50%;
   width: 50%;
@@ -56,7 +67,6 @@ section {
 .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-gap: 2%;
   text-align: center;
 }
 
