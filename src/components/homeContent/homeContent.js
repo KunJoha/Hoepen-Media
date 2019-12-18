@@ -26,27 +26,27 @@ function Home() {
       <div className="home-container">
         {MainView ? (
           <Fragment>
-            <span
-              className="first"
+            <div
+              className="first bubble"
               name="music"
               onClick={e => handleSubTopicView(e)}
             >
               Music
-            </span>
-            <span
-              className="second"
+            </div>
+            <div
+              className="second bubble"
               name="movie"
               onClick={e => handleSubTopicView(e)}
             >
               Movie
-            </span>
-            <span
-              className="third"
+            </div>
+            <div
+              className="third bubble"
               name="design"
               onClick={e => handleSubTopicView(e)}
             >
               Design
-            </span>
+            </div>
           </Fragment>
         ) : (
           ""

@@ -4,7 +4,7 @@
   display: grid;
   grid-gap: 5%;
   grid-template-columns: repeat(3, 30%);
-  grid-template-rows: 10% auto;
+  grid-template-rows: 15% auto;
   grid-template-areas:
     "selected-topic none none"
     "first-section second-section third-section";
@@ -34,4 +34,35 @@
 
 .hidden {
   display: none;
+}
+
+.bubble {
+  text-align: center;
+  color: lightgrey;
+  background-color: rgb(19, 18, 18);
+  border: 1px solid rgb(19, 18, 18);
+  height: 250px;
+  width: 100px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  margin: 15px;
+}
+
+.bubble-open {
+  text-align: center;
+  color: lightgrey;
+  background-color: rgb(19, 18, 18);
+  border: 1px solid rgb(19, 18, 18);
+  height: 250px;
+  width: 100px;
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  margin: 15px;
+}
+
+.bubble:hover {
+  color: black;
+  background-color: rgb(233, 233, 233);
 }
