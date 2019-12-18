@@ -31,21 +31,27 @@ function Home() {
               name="music"
               onClick={e => handleSubTopicView(e)}
             >
-              <h3 className="bubble-title">Music</h3>
+              <h3 name="music" className="bubble-title">
+                Music
+              </h3>
             </div>
             <div
               className="second bubble"
               name="movie"
               onClick={e => handleSubTopicView(e)}
             >
-              <h3 className="bubble-title">Movie</h3>
+              <h3 name="movie" className="bubble-title">
+                Movie
+              </h3>
             </div>
             <div
               className="third bubble"
               name="design"
               onClick={e => handleSubTopicView(e)}
             >
-              <h3 className="bubble-title">Design</h3>
+              <h3 name="design" className="bubble-title">
+                Design
+              </h3>
             </div>
           </Fragment>
         ) : (
@@ -53,25 +59,31 @@ function Home() {
         )}
         {subTopicView === "music" && (
           <Fragment>
-            <h2 className="music-topic" onClick={() => backToMenu()}>
-              music
-            </h2>
+            <div className="music-topic">
+              <h1 className="sub-topic-header" onClick={() => backToMenu()}>
+                Music
+              </h1>
+            </div>
             <MusicContent />
           </Fragment>
         )}
         {subTopicView === "movie" && (
           <Fragment>
-            <h2 className="movie-topic" onClick={() => backToMenu()}>
-              movie
-            </h2>
+            <div className="movie-topic">
+              <h1 className="sub-topic-header" onClick={() => backToMenu()}>
+                Movie
+              </h1>
+            </div>
             <MovieContent />
           </Fragment>
         )}
         {subTopicView === "design" && (
           <Fragment>
-            <h2 className="design-topic" onClick={() => backToMenu()}>
-              design
-            </h2>
+            <div className="design-topic">
+              <h1 className="sub-topic-header" onClick={() => backToMenu()}>
+                Design
+              </h1>
+            </div>
             <DesignContent />
           </Fragment>
         )}
