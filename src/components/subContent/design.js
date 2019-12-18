@@ -14,7 +14,7 @@ function DesignContent() {
     <Fragment>
       <div
         className={
-          "first " + (selectedSub === "first" ? "collapse bubble-open" : "")
+          "first bubble" + (selectedSub === "first" ? "collapse open" : "")
         }
         name="first"
         onClick={e => collapsItem(e)}
@@ -34,7 +34,7 @@ function DesignContent() {
       </div>
       <div
         className={
-          "second " + (selectedSub === "second" ? "collapse bubble-open" : "")
+          "second bubble" + (selectedSub === "second" ? "collapse open" : "")
         }
         name="second"
         onClick={e => collapsItem(e)}
@@ -54,7 +54,7 @@ function DesignContent() {
       </div>
       <div
         className={
-          "third " + (selectedSub === "third" ? "collapse bubble-open" : "")
+          "third bubble" + (selectedSub === "third" ? "collapse open" : "")
         }
         name="third"
         onClick={e => collapsItem(e)}

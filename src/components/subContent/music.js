@@ -13,7 +13,7 @@ function MusicContent() {
     <Fragment>
       <div
         className={
-          "first bubble " + (selectedSub === "first" ? "collapse" : "")
+          "first bubble" + (selectedSub === "first" ? "collapse open" : "")
         }
         name="first"
         onClick={e => collapsItem(e)}
@@ -33,7 +33,7 @@ function MusicContent() {
       </div>
       <div
         className={
-          "second bubble " + (selectedSub === "second" ? "collapse" : "")
+          "second bubble " + (selectedSub === "second" ? "collapse open" : "")
         }
         name="second"
         onClick={e => collapsItem(e)}
@@ -53,7 +53,7 @@ function MusicContent() {
       </div>
       <div
         className={
-          "third bubble " + (selectedSub === "third" ? "collapse" : "")
+          "third bubble " + (selectedSub === "third" ? "collapse open" : "")
         }
         name="third"
         onClick={e => collapsItem(e)}
