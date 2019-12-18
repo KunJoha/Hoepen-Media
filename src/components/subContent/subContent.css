@@ -1,3 +1,9 @@
 .subContent-preview {
   margin: 15px;
 }
+
+.more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

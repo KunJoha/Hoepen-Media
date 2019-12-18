@@ -45,6 +45,7 @@
   border-top-right-radius: 150px;
   border-top-left-radius: 150px;
   margin: 15px;
+  position: relative;
 }
 
 .open {
@@ -55,4 +56,8 @@
 .bubble:hover {
   color: black;
   background-color: rgb(233, 233, 233);
+}
+
+.bubble-title {
+  padding-top: 60px;
 }

@@ -18,7 +18,7 @@ function MovieContent() {
         name="first"
         onClick={e => collapsItem(e)}
       >
-        <h3>movieContent</h3>
+        <h3 className="bubble-title">movieContent</h3>
         <div className={selectedSub === "first" ? "" : "hidden"}>
           <hr className="bubble-seperator" />
           <article className="subContent-preview">
@@ -38,7 +38,7 @@ function MovieContent() {
         name="second"
         onClick={e => collapsItem(e)}
       >
-        <h3>movieContent</h3>
+        <h3 className="bubble-title">movieContent</h3>
         <div className={selectedSub === "second" ? "" : "hidden"}>
           <hr className="bubble-seperator" />
           <article className="subContent-preview">
@@ -58,7 +58,7 @@ function MovieContent() {
         name="third"
         onClick={e => collapsItem(e)}
       >
-        <h3>movieContent</h3>
+        <h3 className="bubble-title">movieContent</h3>
         <div className={selectedSub === "third" ? "" : "hidden"}>
           <hr className="bubble-seperator" />
           <article className="subContent-preview">

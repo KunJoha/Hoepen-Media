@@ -14,12 +14,12 @@ function DesignContent() {
     <Fragment>
       <div
         className={
-          "first bubble" + (selectedSub === "first" ? "collapse open" : "")
+          "first bubble " + (selectedSub === "first" ? "collapse open" : "")
         }
         name="first"
         onClick={e => collapsItem(e)}
       >
-        <h3>designContent</h3>
+        <h3 className="bubble-title">designContent</h3>
         <div className={selectedSub === "first" ? "" : "hidden"}>
           <hr className="bubble-seperator" />
           <article className="subContent-preview">
@@ -30,16 +30,17 @@ function DesignContent() {
             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
             sadipscing elitr, sed diam
           </article>
+          <span className="more">Mehr lesen</span>
         </div>
       </div>
       <div
         className={
-          "second bubble" + (selectedSub === "second" ? "collapse open" : "")
+          "second bubble " + (selectedSub === "second" ? "collapse open" : "")
         }
         name="second"
         onClick={e => collapsItem(e)}
       >
-        <h3>designContent</h3>
+        <h3 className="bubble-title">designContent</h3>
         <div className={selectedSub === "second" ? "" : "hidden"}>
           <hr className="bubble-seperator" />
           <article className="subContent-preview">
@@ -50,16 +51,17 @@ function DesignContent() {
             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
             sadipscing elitr, sed diam
           </article>
+          <span className="more">Mehr lesen</span>
         </div>
       </div>
       <div
         className={
-          "third bubble" + (selectedSub === "third" ? "collapse open" : "")
+          "third bubble " + (selectedSub === "third" ? "collapse open" : "")
         }
         name="third"
         onClick={e => collapsItem(e)}
       >
-        <h3>designContent</h3>
+        <h3 className="bubble-title">designContent</h3>
         <div className={selectedSub === "third" ? "" : "hidden"}>
           <hr className="bubble-seperator" />
           <article className="subContent-preview">
@@ -70,6 +72,7 @@ function DesignContent() {
             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
             sadipscing elitr, sed diam
           </article>
+          <span className="more">Mehr lesen</span>
         </div>
       </div>
     </Fragment>

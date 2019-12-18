@@ -31,21 +31,21 @@ function Home() {
               name="music"
               onClick={e => handleSubTopicView(e)}
             >
-              Music
+              <h3 className="bubble-title">Music</h3>
             </div>
             <div
               className="second bubble"
               name="movie"
               onClick={e => handleSubTopicView(e)}
             >
-              Movie
+              <h3 className="bubble-title">Movie</h3>
             </div>
             <div
               className="third bubble"
               name="design"
               onClick={e => handleSubTopicView(e)}
             >
-              Design
+              <h3 className="bubble-title">Design</h3>
             </div>
           </Fragment>
         ) : (
