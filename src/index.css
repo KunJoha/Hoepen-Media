@@ -24,22 +24,23 @@ body {
   flex: 1 100%;
 }
 
-@media all and (min-width: 600px) {
+@media all and (max-width: 850px) {
   .nav-section {
-    flex: 0.3 0 0;
+    display: none;
   }
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 850px) {
   .content-section {
     flex: 3 0px;
     min-height: 700px;
   }
   .nav-section {
     order: 1;
+    flex: 0.3 0 0;
   }
   footer {
-    order: 3;
+    order: 2;
   }
 }
 
